@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Titillium+Web:wght@200&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.142);
+}
+
+.container{
+    margin: 50px auto;
+    width: 40%;
+    border: 2px solid black;
+    min-height: 60vh;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.068);
+    box-shadow: 10px 10px 20px rgba(24, 23, 23, 0.457);
+}
+.container:hover{
+    box-shadow: 10px 10px 20px rgb(255, 255, 255);
+}
+.calculator{
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: auto;
+}
+.calculator h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 15px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.border_bottom{
+    border-bottom: 2px solid rgba(12, 1, 1, 0.091);
+    margin: 15px 0;
+}
+.calculator label{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.button i{
+    font-size: 1.1rem;
+    padding: 3px;
+    
+}
+.input{
+    width: 93%;
+    font-size: 1.2rem;
+}
+#quality{
+    width: 100%;
+    font-size: 1.2rem;
+}
+.calc_container{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.calc_container button{
+    font-size: 1.2rem;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    padding: 3px 7px;
+}
+.calc_container button:hover{
+    background-color: rgba(0, 0, 0, 0.365);
+    color: white;
+
+}
+#calculated_tip{
+    visibility: hidden;
+    min-width: 250px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    border-radius: 2px;
+    padding: 16px;
+    margin-top: 70px;
+    margin: auto;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgba(0, 0, 0, 0.226);
+    text-align: center;
+    
+}
+#calculated_tip.show{
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@-webkit-keyframes fadein{
+     from{bottom: 0; opacity: 0;}
+     to{bottom: 30px; opacity: 1;}
+}
+@keyframes fadein{
+    from{bottom: 0; opacity: 0;}
+    to{bottom: 30px; opacity: 1;}
+}
+@-webkit-keyframes fadeout{
+    from{bottom: 30px; opacity: 1;}
+    to{bottom: 0; opacity: 0;}
+}
+@keyframes fadeout{
+    from{bottom: 30px; opacity: 1;}
+    to{bottom: 0; opacity: 0;}
+}
+
+
+@media(max-width: 1024px){
+    .container{
+        width: 60%;
+        min-height: 50vh;
+    }
+}
+@media(max-width: 688px){
+    .container{
+        width: 70%;
+        min-height: 40vh;
+    }
+}
+@media(max-width: 414px){
+    .container{
+        width: 75%;
+    }
+    .calculator h2{
+        font-size: 1.7rem;
+    }
+    .calculator label{
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        text-transform: initial
+    }
+    .input{
+        width: 91%;
+    }
+    #quality{
+        font-size: 1.1rem;
+    }
+    .calc_container button{
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+
+}
+@media(max-width: 414px){
+    .container{
+        width: 85%;
+    }
+}
+
